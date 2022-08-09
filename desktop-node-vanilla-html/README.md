@@ -1,6 +1,6 @@
-# A Tonic example desktop app built with Socket SDK
+# A plain html file app built with Socket SDK
 
-This app uses [ssc-node](https://github.com/socketsupply/ssc-node) as a backend and [Tonic](https://tonicframework.dev) code bundled with [esbuild](https://esbuild.github.io) for a frontend.
+This app uses [ssc-node](https://github.com/socketsupply/ssc-node) as a backend and a plain html file as the front end
 
 # Build instructions
 
