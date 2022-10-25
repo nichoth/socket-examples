@@ -16,7 +16,7 @@ async function watchBackend () {
   for await (const { filename } of watcher) {
     cp(`src/main/${filename}`, path.resolve(target))
   }
-  spawn('node', ['--watch', path.resolve(`${target}/main.js`)])
+  // spawn('node', ['--watch', path.resolve(`${target}/main.js`)])
 }
 
 const clients = []

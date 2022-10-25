@@ -33,7 +33,7 @@ function App() {
       <button className="button-increase" onClick={async () => {
         const result = await window.system.send('increase counter')
         console.log(`Result: ${result}`)
-      }}>Increase ghghg counter from the render process</button>
+      }}>Increase counter from the render process</button>
     </>
   );
 }

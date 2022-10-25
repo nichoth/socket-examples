@@ -4,7 +4,7 @@ async function main () {
   let counter = 0;
 
   function increaseCounterAndSendMessage(type) {
-    counter += 10;
+    counter += 1;
     system.send({
       window: 0,
       event: 'counter increase',
