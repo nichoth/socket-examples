@@ -4,7 +4,8 @@
   "main": "main.js",
   "scripts": {
     "start": "ssc build --platform=ios-simulator -r",
-    "build": "ssc build -c -p"
+    "build": "ssc build -c -p",
+    "watch": "ssc build -r --port=8000 --platform=ios-simulator & ./build.js --watch=`ssc print-build-dir --platform=ios-simulator`"
   },
   "devDependencies": {
     "clean-css": "^5.1.1",
