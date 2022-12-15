@@ -3,4 +3,6 @@ desktop-node-preact/dist
 node_modules
 io-tonic/dist
 io-tonic/public
+io-node-tonic/dist
+io-node-tonic/public
 
