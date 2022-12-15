@@ -8,7 +8,7 @@
     "start": "npm run build && ssc build -r .",
     "build": "mkdir -p public && rm -rf dist/* public/* && cp src/index.html src/style.css public && npm run build-js && npm run build-main",
     "build-js": "mkdir -p ./public && esbuild src/index.js --bundle --outfile=public/bundle.js --platform=browser",
-    "build-main": "esbuild src/main/index.js --bundle --outifle=public/main.js --platform=node",
+    "build-main": "esbuild src/main/index.js --bundle --outfile=public/main.js --platform=node",
     "build-tests": "esbuild test/test.js --bundle --outfile=public/test.js",
     "test": "npm run build && npm run build-tests && ssc build --test=test.js --headless -r -o . | tap-arc"
   },
