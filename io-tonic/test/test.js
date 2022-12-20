@@ -1,7 +1,6 @@
 // @ts-check
 'use strict'
 
-// import { dom } from '@socketsupply/test-dom'
 import { test, GLOBAL_TEST_RUNNER } from 'tapzero'
 import '@socketsupply/io/redirectOutput.js'
 import sleep from './sleep.js'
@@ -20,16 +19,8 @@ test('example', async t => {
     t.ok('example')
 
     // wait for rendering
-    await sleep(1)
+    await sleep(100)
 
     const hello = document.getElementById('hello')
-
-    // const hello = await dom.waitForText({
-    //     element: document.body,
-    //     regex: /hello, world/
-    // })
-
-    // t.ok(dom.isElementVisible(hello), 'should find the hello world text')
-
     t.equal(hello.textContent, 'hello, world', 'should have expected text')
 })
