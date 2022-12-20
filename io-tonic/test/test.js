@@ -18,7 +18,7 @@ const pollTimeout = setTimeout(function poll () {
 test('example', async t => {
     t.ok('example')
 
-    // wait for rendering
+    // wait for the app to render
     await sleep(100)
 
     const hello = document.getElementById('hello')

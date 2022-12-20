@@ -20,9 +20,10 @@ class AppContainer extends Tonic {
             n = parseInt(await container.read())
         } catch (err) {
             if (err.toString().includes('no such file')) {
-                container.write() // make the file
+                await container.write() // make the file
             } else {
                 console.log('err reading', err)
+                throw err
             }
         }
         
