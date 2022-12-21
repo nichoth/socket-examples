@@ -1,5 +1,5 @@
 # ssc example
-A minimal example of an app made with `ssc`. This creates a native application binary from source code written in HTML, CSS, and Javascript. This example shows in memory state, and also updates a local file. If you look at the filesystem, in `/tmp/ssc-test` there is a file with content equal to the count in the app.
+A minimal example of an app made with `ssc`. This creates a native application binary from source code written in HTML, CSS, and Javascript. This example shows in-memory state, and also updates a local file. If you look at the filesystem, in `/tmp/ssc-test` there is a file with content equal to the count in the app.
 
 __Featuring__
 * some state is persisted to the filesystem via the [io module](https://github.com/socketsupply/io)
@@ -16,7 +16,7 @@ Building this app happens in two discrete steps. First we create a single page a
 Then we call `ssc build .`. This creates a desktop-specific binary file from the single page JS app we just built. You can run this app without a browser.
 
 **Note**
-There is no `build` script defined in `ssc.ini`. This means that by default the `ssc` command will copy all files from the `input` directory to the `output` directory.
+There is no `build` script defined in `socket.ini`. This means that by default the `ssc` command will copy all files from the `input` directory to the `output` directory.
 
 This is defined in the `package.json` script `start`:
 ```js
