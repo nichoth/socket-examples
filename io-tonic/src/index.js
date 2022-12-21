@@ -14,10 +14,11 @@ class AppContainer extends Tonic {
 
     static async create () {
         const container = new AppContainer()
-        let n = 0
-        container.state = { n }
+        container.state = { n: 0 }
+
         try {
-            n = parseInt(await container.read())
+            const n = parseInt(await container.read())
+            container.state = { n }
         } catch (err) {
             if (err.toString().includes('no such file')) {
                 await container.write() // make the file
@@ -26,7 +27,7 @@ class AppContainer extends Tonic {
                 throw err
             }
         }
-        
+
         return container
     }
 
